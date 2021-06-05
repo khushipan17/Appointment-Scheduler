@@ -50,7 +50,11 @@ function App() {
      <Addappointment />
         <Search  query = {query}
          
-         onQueryChange = {myQuery => setQuery(myQuery)}
+         onQueryChange={myQuery => setQuery(myQuery)}
+         orderBy={orderBy}
+         onOrderByChange={mySort => setOrderBy(mySort)}
+         sortBy={sortBy}
+         onSortByChange={mySort => setSortBy(mySort)}
         
          
         />

@@ -3,7 +3,18 @@ import {useState} from 'react';
 
 const Addappointment = () =>{
 
+   const clearData =  {
+    
+    ownerName  : '',
+    petName : '',
+    aptDate : '',
+    aptNotes  : '',
+    aptTime : ''
+
+
+}
   let [toggelForm,settoggelForm] = useState(false);
+  let[form , setformData] = useState(clearData)
     return (
 
       
